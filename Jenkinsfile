@@ -5,7 +5,7 @@ pipeline {
     
     stages {
         stage('Build') {
-        	git 'https://github.com/terminalerror/jgsu-spring-petclinic/tree/wavefront'
+        	git 'https://github.com/terminalerror/jgsu-spring-petclinic.git'
         }
        
     }
