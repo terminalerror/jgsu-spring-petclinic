@@ -5,7 +5,12 @@ pipeline {
     
     stages {
         stage('Build') {
-        	git 'https://github.com/terminalerror/jgsu-spring-petclinic.git'
+            steps {
+            	git 'https://github.com/terminalerror/jgsu-spring-petclinic.git'
+            }
+            post {
+                echo "Successfully built"
+            }
         }
        
     }
