@@ -9,9 +9,6 @@ pipeline {
             	// git 'https://github.com/terminalerror/jgsu-spring-petclinic.git'
                 echo "Hello World"
             }
-            post {
-
-            }
         }
        
     }
