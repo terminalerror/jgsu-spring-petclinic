@@ -10,12 +10,7 @@ pipeline {
                 echo "Hello World"
             }
             post {
-                success {
-                    echo "Successfully built"
-                }
-                failure {
-                    echo "Failed"
-                }
+
             }
         }
        
