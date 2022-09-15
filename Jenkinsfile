@@ -1,17 +1,22 @@
-/* Principal pipeline for the DMHS product components. */
 pipeline {
-
-	agent any   
-    
-    stages {
+  agent any
+  stages {
+    stage('Build') {
+      parallel {
         stage('Build') {
-            steps {
-            	// git 'https://github.com/terminalerror/jgsu-spring-petclinic.git'
-                echo "Hello World"
-            }
+          steps {
+            echo 'Hello World'
+          }
         }
-       
+
+        stage('Test') {
+          steps {
+            echo 'Testing App'
+          }
+        }
+
+      }
     }
 
-
+  }
 }
