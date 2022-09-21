@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       parallel {
-        stage('Build') {
+        stage('Hello') {
           steps {
             echo 'Hello World'
           }
@@ -18,9 +18,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Deploy') {
       steps {
-        echo 'Deploy'
+        echo 'Deploy file:///home/terminal/Downloads/GitHubProjects/forked/jgsu-spring-petclinic/.git test'
       }
     }
 
